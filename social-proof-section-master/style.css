@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --very-dark-magenta :hsl(300, 43%, 22%);
+    --soft-pink : hsla(333, 41%, 74%);
+    --white : hsl(0, 0%, 100%);
+    --dark-greyish-magenta:hsl(303, 10%, 53%);
+    --light-greyish-magenta:hsl(300, 24%, 96%);
+    
+}
+body {
+    background-color: var(--white);
+    margin: 1rem;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--dark-greyish-magenta);
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    background-image: url("./images/bg-pattern-top-mobile.svg"),url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: top left,bottom right;               
+    background-repeat: no-repeat,no-repeat;
+}
+h1 {
+    color: var(--very-dark-magenta);
+    margin-top: 4rem;
+    font-weight: 700;
+    max-width: 200px;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+}
+.rate {
+    color: var(--very-dark-magenta);
+    font-weight:700 ;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 5;
+    background-color:var(--light-greyish-magenta) ;
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    
+    
+    
+}
+.stars {
+    display: flex;
+
+}
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.colton {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    color: var(--white);
+    margin-top: 2.5rem;
+
+}
+
+.irene {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    color: var(--white);
+}
+
+.anne {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    color: var(--white);
+    margin-bottom: 5rem;
+}
+.color {
+    color: var(--soft-pink);
+    margin-top: 0.5rem;
+}
+.picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media screen and (min-width:750px) {
+    
+  
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        max-width: 1150px;
+        margin: auto;
+        padding-top:  3rem;
+        
+
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+      
+    
+        
+    }
+    h1 {
+        text-align: unset;
+        margin: 0;
+        margin-bottom: 1rem;
+        max-width: 250px;
+    }
+    .intro {
+        text-align:unset;
+        margin
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+       
+    }
+    .joint-rates {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        min-width: 50%;
+    }
+    .rating {
+        margin: 0.5rem;
+    }
+    .rating {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 2rem ;
+
+    }
+    
+    .rating:nth-child(2){
+        
+        margin-left:5rem;
+       
+    }
+    .rating:nth-child(3) {
+        margin-left: 10rem;
+       
+        
+    }
+    .colton {
+        margin: 0;
+    }
+
+    .anne {
+        margin: 0;
+    }
+    .buyers {
+        display: flex;
+        margin-left: 2rem;
+        flex: 1;
+        flex-basis: 100%;
+        flex-shrink: 1;
+        margin: 2rem;
+        margin-top: 0;
+        
+        
+    }
+    .colton:nth-child(1) {
+        align-self: flex-start;
+    }
+    .irene:nth-child(2) {
+        align-self:center;
+    }
+    .anne:nth-child(3){
+        align-self:flex-end;
+        
+    }
+    
+    
+}
+
