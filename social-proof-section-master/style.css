@@ -166,15 +166,14 @@ h1 {
         align-items: start;
         min-width: 50%;
     }
-    .rating {
-        margin: 0.5rem;
-    }
+  
     .rating {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         padding: 1rem 2rem ;
+        gap: 1rem;
 
     }
     
